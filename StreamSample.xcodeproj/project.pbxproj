@@ -11,6 +11,7 @@
 		3D4CBA3119D8261D005C4C9D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D4CBA3019D8261D005C4C9D /* Images.xcassets */; };
 		3D4CBA3419D8261D005C4C9D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D4CBA3219D8261D005C4C9D /* LaunchScreen.xib */; };
 		3D4CBA4019D8261D005C4C9D /* StreamSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4CBA3F19D8261D005C4C9D /* StreamSampleTests.swift */; };
+		3DA05A5719D833FA00BB04F0 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA05A5619D833FA00BB04F0 /* CoreMotion.framework */; };
 		3DE5CBCD19D8272100CA702C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE5CBCB19D8272100CA702C /* AppDelegate.swift */; };
 		3DE5CBCE19D8272100CA702C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE5CBCC19D8272100CA702C /* ViewController.swift */; };
 		8C09211D497D4662AC25ADF4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D33943C5A74A82BA40B14B /* libPods.a */; };
@@ -36,10 +37,12 @@
 		3D4CBA3919D8261D005C4C9D /* StreamSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StreamSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D4CBA3E19D8261D005C4C9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D4CBA3F19D8261D005C4C9D /* StreamSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamSampleTests.swift; sourceTree = "<group>"; };
+		3DA05A5619D833FA00BB04F0 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		3DE5CBCB19D8272100CA702C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DE5CBCC19D8272100CA702C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3DE5CBCF19D8276700CA702C /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
-		6B3E6BE9002B467D9229F6CB /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		62A1BD782EF4F16BC2051098 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B6B82CDA042FE8D1529775C5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DA05A5719D833FA00BB04F0 /* CoreMotion.framework in Frameworks */,
 				8C09211D497D4662AC25ADF4 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,8 +71,8 @@
 				3D4CBA2619D8261D005C4C9D /* StreamSample */,
 				3D4CBA3C19D8261D005C4C9D /* StreamSampleTests */,
 				3D4CBA2519D8261D005C4C9D /* Products */,
-				6B3E6BE9002B467D9229F6CB /* Pods.xcconfig */,
 				ECDFE5D4B44E4BC690D54C52 /* Frameworks */,
+				71B1C1C73A27081E8AFD22F9 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,9 +132,19 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		71B1C1C73A27081E8AFD22F9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B6B82CDA042FE8D1529775C5 /* Pods.debug.xcconfig */,
+				62A1BD782EF4F16BC2051098 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		ECDFE5D4B44E4BC690D54C52 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3DA05A5619D833FA00BB04F0 /* CoreMotion.framework */,
 				33D33943C5A74A82BA40B14B /* libPods.a */,
 			);
 			name = Frameworks;
@@ -246,7 +260,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		4F6CEAA6E4794AB796BA5D12 /* Check Pods Manifest.lock */ = {
@@ -393,7 +407,7 @@
 		};
 		3D4CBA4419D8261D005C4C9D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6B3E6BE9002B467D9229F6CB /* Pods.xcconfig */;
+			baseConfigurationReference = B6B82CDA042FE8D1529775C5 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = StreamSample/Info.plist;
@@ -405,7 +419,7 @@
 		};
 		3D4CBA4519D8261D005C4C9D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6B3E6BE9002B467D9229F6CB /* Pods.xcconfig */;
+			baseConfigurationReference = 62A1BD782EF4F16BC2051098 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = StreamSample/Info.plist;
