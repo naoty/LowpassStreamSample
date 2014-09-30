@@ -1,0 +1,3 @@
+[submodule "Stream"]
+	path = Stream
+	url = git://github.com/naoty/Stream.git

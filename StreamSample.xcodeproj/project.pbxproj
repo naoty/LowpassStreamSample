@@ -12,6 +12,8 @@
 		3D4CBA3419D8261D005C4C9D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D4CBA3219D8261D005C4C9D /* LaunchScreen.xib */; };
 		3D4CBA4019D8261D005C4C9D /* StreamSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4CBA3F19D8261D005C4C9D /* StreamSampleTests.swift */; };
 		3DA05A5719D833FA00BB04F0 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA05A5619D833FA00BB04F0 /* CoreMotion.framework */; };
+		3DC4A66119DAE7F100D1F947 /* Stream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD4C6FB19D84B66002C2903 /* Stream.framework */; };
+		3DC4A66219DAE7F100D1F947 /* Stream.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD4C6FB19D84B66002C2903 /* Stream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3DE5CBCD19D8272100CA702C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE5CBCB19D8272100CA702C /* AppDelegate.swift */; };
 		3DE5CBCE19D8272100CA702C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE5CBCC19D8272100CA702C /* ViewController.swift */; };
 		8C09211D497D4662AC25ADF4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D33943C5A74A82BA40B14B /* libPods.a */; };
@@ -25,7 +27,49 @@
 			remoteGlobalIDString = 3D4CBA2319D8261D005C4C9D;
 			remoteInfo = StreamSample;
 		};
+		3DC4A66319DAE7F100D1F947 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DD4C6F519D84B66002C2903 /* Stream.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D93E57419AAC8AE0083A920;
+			remoteInfo = Stream;
+		};
+		3DD4C6FA19D84B66002C2903 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DD4C6F519D84B66002C2903 /* Stream.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D93E57519AAC8AE0083A920;
+			remoteInfo = Stream;
+		};
+		3DD4C6FC19D84B66002C2903 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DD4C6F519D84B66002C2903 /* Stream.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D93E58019AAC8AE0083A920;
+			remoteInfo = StreamTests;
+		};
+		3DD4C6FE19D84B6E002C2903 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DD4C6F519D84B66002C2903 /* Stream.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D93E57419AAC8AE0083A920;
+			remoteInfo = Stream;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3DC4A66519DAE7F100D1F947 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3DC4A66219DAE7F100D1F947 /* Stream.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		33D33943C5A74A82BA40B14B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +82,7 @@
 		3D4CBA3E19D8261D005C4C9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D4CBA3F19D8261D005C4C9D /* StreamSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamSampleTests.swift; sourceTree = "<group>"; };
 		3DA05A5619D833FA00BB04F0 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		3DD4C6F519D84B66002C2903 /* Stream.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Stream.xcodeproj; path = Stream/Stream.xcodeproj; sourceTree = "<group>"; };
 		3DE5CBCB19D8272100CA702C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DE5CBCC19D8272100CA702C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3DE5CBCF19D8276700CA702C /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
@@ -52,6 +97,7 @@
 			files = (
 				3DA05A5719D833FA00BB04F0 /* CoreMotion.framework in Frameworks */,
 				8C09211D497D4662AC25ADF4 /* libPods.a in Frameworks */,
+				3DC4A66119DAE7F100D1F947 /* Stream.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +114,7 @@
 		3D4CBA1B19D8261D005C4C9D = {
 			isa = PBXGroup;
 			children = (
+				3DD4C6F519D84B66002C2903 /* Stream.xcodeproj */,
 				3D4CBA2619D8261D005C4C9D /* StreamSample */,
 				3D4CBA3C19D8261D005C4C9D /* StreamSampleTests */,
 				3D4CBA2519D8261D005C4C9D /* Products */,
@@ -123,6 +170,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		3DD4C6F619D84B66002C2903 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DD4C6FB19D84B66002C2903 /* Stream.framework */,
+				3DD4C6FD19D84B66002C2903 /* StreamTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		3DE5CBCA19D8272100CA702C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,10 +218,13 @@
 				3D4CBA2119D8261D005C4C9D /* Frameworks */,
 				3D4CBA2219D8261D005C4C9D /* Resources */,
 				040651A38DB74B89A116FB42 /* Copy Pods Resources */,
+				3DC4A66519DAE7F100D1F947 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3DD4C6FF19D84B6E002C2903 /* PBXTargetDependency */,
+				3DC4A66419DAE7F100D1F947 /* PBXTargetDependency */,
 			);
 			name = StreamSample;
 			productName = StreamSample;
@@ -219,6 +278,12 @@
 			mainGroup = 3D4CBA1B19D8261D005C4C9D;
 			productRefGroup = 3D4CBA2519D8261D005C4C9D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3DD4C6F619D84B66002C2903 /* Products */;
+					ProjectRef = 3DD4C6F519D84B66002C2903 /* Stream.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				3D4CBA2319D8261D005C4C9D /* StreamSample */,
@@ -226,6 +291,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3DD4C6FB19D84B66002C2903 /* Stream.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Stream.framework;
+			remoteRef = 3DD4C6FA19D84B66002C2903 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3DD4C6FD19D84B66002C2903 /* StreamTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = StreamTests.xctest;
+			remoteRef = 3DD4C6FC19D84B66002C2903 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3D4CBA2219D8261D005C4C9D /* Resources */ = {
@@ -305,6 +387,16 @@
 			isa = PBXTargetDependency;
 			target = 3D4CBA2319D8261D005C4C9D /* StreamSample */;
 			targetProxy = 3D4CBA3A19D8261D005C4C9D /* PBXContainerItemProxy */;
+		};
+		3DC4A66419DAE7F100D1F947 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Stream;
+			targetProxy = 3DC4A66319DAE7F100D1F947 /* PBXContainerItemProxy */;
+		};
+		3DD4C6FF19D84B6E002C2903 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Stream;
+			targetProxy = 3DD4C6FE19D84B6E002C2903 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -410,6 +502,7 @@
 			baseConfigurationReference = B6B82CDA042FE8D1529775C5 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				INFOPLIST_FILE = StreamSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -422,6 +515,7 @@
 			baseConfigurationReference = 62A1BD782EF4F16BC2051098 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				INFOPLIST_FILE = StreamSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
